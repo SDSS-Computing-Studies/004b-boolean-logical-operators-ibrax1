@@ -28,3 +28,25 @@ Example:
 Enter a number: 8
 8 is only a perfect cube.
 """
+sqaurerootpossiblenumber = False
+number = input("enter a number: ")
+number = float(number)
+sqrtnum = (number ** (1.0/2))
+sqrtnum = round(sqrtnum,8)
+intsqrt = int(sqrtnum)
+if sqrtnum == intsqrt:
+    sqaurerootpossiblenumber = True
+
+cuberootpossiblenumber = False
+cbrt = (number ** (1.0/3))
+cbrt = round(cbrt,8)
+intcbrt = int(cbrt)
+if cbrt == intcbrt:
+    cuberootpossiblenumber = True
+
+if cuberootpossiblenumber == True and sqaurerootpossiblenumber == True:
+    print(str(number)+" is a perfect square and a perfect cube")
+if cuberootpossiblenumber == True and sqaurerootpossiblenumber == False:
+    print(str(number)+" is a perfect cube")
+if cuberootpossiblenumber == False and sqaurerootpossiblenumber == True:
+    print(str(number)+" is a perfect square")
