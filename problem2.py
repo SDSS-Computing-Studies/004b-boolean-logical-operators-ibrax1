@@ -23,11 +23,17 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
-small = input("enter a small number: ")
-big = input("enter a bigger number: ")
-big = int(big)
-small = int(small)
 
+num1 = input("enter a number: ")
+num2 = input("enter a number: ")
+num1 = int(num1)
+num2 = int(num2)
+if num1>num2:
+    big = num1
+    small = num2
+else:
+    small = num1
+    big = num2
 if (big % small) == 0:
     print(str(small) + " is a factor of " + str(big))
 else:

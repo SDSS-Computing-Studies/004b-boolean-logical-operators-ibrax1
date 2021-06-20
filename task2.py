@@ -45,8 +45,8 @@ if cbrt == intcbrt:
     cuberootpossiblenumber = True
 
 if cuberootpossiblenumber == True and sqaurerootpossiblenumber == True:
-    print(str(number)+" is a perfect square and a perfect cube")
+    print(str(number)+" is both a perfect square and a perfect cube.")
 if cuberootpossiblenumber == True and sqaurerootpossiblenumber == False:
-    print(str(number)+" is a perfect cube")
+    print(str(number)+" is only a perfect cube.")
 if cuberootpossiblenumber == False and sqaurerootpossiblenumber == True:
-    print(str(number)+" is a perfect square")
+    print(str(number)+" is only a perfect square.")
