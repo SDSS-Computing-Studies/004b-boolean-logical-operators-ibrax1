@@ -16,8 +16,8 @@ Enter a number: -3
 -3 is not a positive integer
 """
 x = input("enter a number: ")
-x = int(x)
+x = float(x)
 if x >= 0:
-    print(str(x) + " is a positive number")
+    print(str(x) + " is a positive integer")
 else:
-    print(str(x) + " is not a positive number")
+    print(str(x) + " is not a positive integer")
