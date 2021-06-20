@@ -19,3 +19,12 @@ Enter a number: 48
 """
 
 #! python3
+divisibleby6 = False
+divisibleby8 = False
+input = input("Enter a number: ")
+input = int(input)
+if (input % 6) == 0 and (input % 8) != 0:
+    divisibleby6 = True
+    print(str(input) + " is frue")
+else:
+    print(str(input) + " is not frue")
